@@ -1,0 +1,90 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.imagen-empresa img {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    
+
+}
+
+.ham1{
+    width: 450px;
+    height: 300px;
+}
+
+
+
+
+
+.gallery {
+    margin-top: 60px;
+ 
+}
+
+.todo-lista h3 {
+    padding: 5px  10px 10px 10px;
+    background-color: blueviolet;
+    font-size: 20px ;
+    border-radius: 30px;
+    width: 40px;
+
+}
+
+.caja1{
+    width: 100% ;
+    height: 200px;
+    background-color: aqua;
+}
+.caja2{
+    width: 100% ;
+    height: 200px;
+    background-color: black;
+}
+
+
+.contac{
+    background-color: aqua;
+    height: 300px;
+}
+
+.contac2{
+    background-image: url(../images/was.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+}
+
+
+#spider{
+    justify-content: flex-end;
+    width: 200px;
+    height: 250px;
+    animation-name: mianimacion;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    position: relative;
+    
+    
+}
+
+
+@keyframes mianimacion {
+
+    0%{left: 0px;  top: 0px; }
+    20%{left: 0px;  top: 100px; }
+    50%{left: 20px;  top: 0px; }
+    100%{left:-10 px;  top: 0px; }
+    
+}
