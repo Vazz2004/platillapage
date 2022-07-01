@@ -2,18 +2,45 @@
     
     margin: 0;
     padding: 0;
+   font-family: 'Open Sans', sans-serif;
+
+
+}
+
+.navbar{
+    background-color: orangered;
+}
+
+.navbar img{
+    width: auto;
+    height: 60px;
+}
+
+
+.carousel  img {
+height: 500px;
+}
+
+
+.contac-float img {
+    width: 100px;
+    height: 70px;
+    position: fixed;
+    z-index: 1000;
+    margin: 30px;
 }
 
 
 
-
-.imagen-empresa img {
-    display: flex;
+.imagen-empresa {
     width: 100%;
-    height: 500px;
-    position: relative;
-    display: inline-block;
-    text-align: center;
+    height: 400px;
+    background-image: url(https://scontent.fbog15-1.fna.fbcdn.net/v/t1.6435-9/125225422_696529341269583_730577646329627088_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGp5Mvv76Pxnurwy6WvS-nYJi5ZI5hVGbkmLlkjmFUZucUKshp5etHSOEjA2fNxsadr-F700IVSaeZ02c3lEPks&_nc_ohc=L-oI_AC9CPAAX94kOSj&_nc_ht=scontent.fbog15-1.fna&oh=00_AT8nYiCsAr6-_77zqMaYUMK1szvHduGlJJMr6au27zI_sQ&oe=62E3F0B6);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
     
 
 }
@@ -34,7 +61,7 @@
 
 .todo-lista h3 {
     padding: 5px  10px 10px 10px;
-    background-color: blueviolet;
+    background-color: orangered;
     font-size: 20px ;
     border-radius: 30px;
     width: 40px;
@@ -60,31 +87,120 @@
 
 .contac2{
     background-image: url(../images/was.webp);
-    background-attachment: fixed;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  
+}
+
+
+
+.contac{
+    background-image: url(../images/was.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  
+}
+
+
+.pie-pagina{
+    z-index: 15000;
     width: 100%;
-    height: 300px;
+    background-color: #0a141d;
+
+}
+
+.pie-pagina .grupo1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+
+
+
 }
 
 
-#spider{
-    justify-content: flex-end;
-    width: 200px;
-    height: 250px;
-    animation-name: mianimacion;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    position: relative;
-    
-    
+.pie-pagina .grupo1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pie-pagina .grupo1 .box figure img{
+    width: 150px;
+
 }
 
 
-@keyframes mianimacion {
+.pie-pagina .grupo1 .box h2{
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 20px;
 
-    0%{left: 0px;  top: 0px; }
-    20%{left: 0px;  top: 100px; }
-    50%{left: 20px;  top: 0px; }
-    100%{left:-10 px;  top: 0px; }
-    
 }
+
+.pie-pagina .grupo1 .box{
+    color: #efeefe;
+    margin-bottom: 20px;
+}
+
+.pie-pagina .grupo1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transform: all 300ms ease  ;
+
+
+}
+
+.pie-pagina .grupo1 .red-social a:hover{
+    color: aqua;
+}
+
+
+.pie-pagina .grupo2{
+    background-color:#0a1a2a ;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+
+.pie-pagina .grupo2 small{
+    font-size: 15px;
+}
+
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo1 {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    
+    
+    
+    }
+}
+
+
+
+
